@@ -5,38 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="Script.js"></script>
   </head>
 
   <body>
     <div id="calculator">
       <div id="calculatorBody">
         <div id="screen">
-          <p></p>
+          <p id="screenNum"></p>
         </div>
         <div id="numpad">
           <div>
             <button class="sign">+</button>
-            <button>7</button>
-            <button>4</button>
-            <button>0</button>
+            <button onclick="inputNumber(7);">7</button>
+            <button onclick="inputNumber(4);">4</button>
+            <button onclick="inputNumber(0);">0</button>
           </div>
           <div>
             <button class="sign">-</button>
-            <button>8</button>
-            <button>5</button>
-            <button>1</button>
+            <button onclick="inputNumber(8);">8</button>
+            <button onclick="inputNumber(5);">5</button>
+            <button onclick="inputNumber(1);">1</button>
           </div>
           <div>
             <button class="sign" style="padding-top: 20px">*</button>
-            <button>9</button>
-            <button>6</button>
-            <button>2</button>
+            <button onclick="inputNumber(9);">9</button>
+            <button onclick="inputNumber(6);">6</button>
+            <button onclick="inputNumber(2);">2</button>
           </div>
           <div>
             <button class="sign">/</button>
             <button class="sign" style="font-size: 20px">Back</button>
             <button class="sign">=</button>
-            <button>3</button>
+            <button onclick="inputNumber(3);">3</button>
           </div>
         </div>
       </div>
