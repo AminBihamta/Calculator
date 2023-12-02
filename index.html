@@ -16,29 +16,35 @@
         </div>
         <div id="numpad">
           <div>
-            <button class="sign">+</button>
+            <button onclick="addNumber('+');" class="sign">+</button>
             <button onclick="inputNumber(7);">7</button>
             <button onclick="inputNumber(4);">4</button>
             <button onclick="inputNumber(0);">0</button>
           </div>
           <div>
-            <button class="sign">-</button>
+            <button onclick="addNumber('-');" class="sign">-</button>
             <button onclick="inputNumber(8);">8</button>
             <button onclick="inputNumber(5);">5</button>
             <button onclick="inputNumber(1);">1</button>
           </div>
           <div>
-            <button class="sign" style="padding-top: 20px">*</button>
+            <button
+              onclick="addNumber('*');"
+              class="sign"
+              style="padding-top: 20px"
+            >
+              *
+            </button>
             <button onclick="inputNumber(9);">9</button>
             <button onclick="inputNumber(6);">6</button>
             <button onclick="inputNumber(2);">2</button>
           </div>
           <div>
-            <button class="sign">/</button>
+            <button onclick="addNumber('/');" class="sign">/</button>
             <button onclick="backspace();" class="sign" style="font-size: 20px">
               Back
             </button>
-            <button class="sign">=</button>
+            <button onclick="equal();" class="sign">=</button>
             <button onclick="inputNumber(3);">3</button>
           </div>
         </div>
