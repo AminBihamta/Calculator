@@ -68,6 +68,8 @@ button:active {
   text-align: right;
   width: 300px;
   font-size: 30px;
+  overflow: hidden;
+  width: 20ch;
 }
 
 #numpad {
