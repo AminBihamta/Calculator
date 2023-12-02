@@ -43,7 +43,8 @@ button {
 }
 
 button:active {
-  background: red;
+  background: #e0e0e0;
+  box-shadow: inset 20px 20px 60px #bebebe, inset -20px -20px 60px #ffffff;
 }
 
 #screen {
