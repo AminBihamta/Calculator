@@ -1,54 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculator</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script src="Script.js"></script>
-  </head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Calculator</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="Script.js"></script>
+    </head>
 
-  <body>
-    <div id="calculator">
-      <div id="calculatorBody">
-        <div id="screen">
-          <p id="screenNum"></p>
+    <body>
+        <div id="calculator" class="calculator-light-mode">
+            <div id="calculatorBody">
+                <div id="screen" class="light-mode">
+                    <p id="screenNum"></p>
+                </div>
+                <div id="numpad">
+                    <div>
+                        <button class="sign light-mode"
+                            onclick="addNumber('+');" >+</button>
+                        <button class="calculatorButton light-mode"
+                            onclick="inputNumber(7);">7</button>
+                        <button class="calculatorButton light-mode"
+                            onclick="inputNumber(4);">4</button>
+                        <button class="calculatorButton light-mode"
+                            onclick="inputNumber(0);">0</button>
+                    </div>
+                    <div>
+                        <button 
+                            onclick="addNumber('-');" class="sign light-mode">-</button>
+                        <button class="calculatorButton light-mode"
+                            onclick="inputNumber(8);">8</button>
+                        <button class="calculatorButton light-mode"
+                            onclick="inputNumber(5);">5</button>
+                        <button class="calculatorButton light-mode"
+                            onclick="inputNumber(1);">1</button>
+                    </div>
+                    <div>
+                        <button
+                            onclick="addNumber('*');"
+                            class="sign light-mode"
+                            style="padding-top: 20px">
+                            *
+                        </button>
+                        <button class="calculatorButton light-mode"
+                            onclick="inputNumber(9);">9</button>
+                        <button class="calculatorButton light-mode"
+                            onclick="inputNumber(6);">6</button>
+                        <button class="calculatorButton light-mode"
+                            onclick="inputNumber(2);">2</button>
+                    </div>
+                    <div>
+                        <button 
+                            onclick="addNumber('/');" class="sign light-mode">/</button>
+                        <button  onclick="backspace();"
+                            class="sign light-mode" style="font-size: 20px">
+                            Back
+                        </button>
+                        <button onclick="equal();"
+                            class="sign light-mode">=</button>
+                        <button class="calculatorButton light-mode"
+                            onclick="inputNumber(3);">3</button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div id="numpad">
-          <div>
-            <button onclick="addNumber('+');" class="sign">+</button>
-            <button onclick="inputNumber(7);">7</button>
-            <button onclick="inputNumber(4);">4</button>
-            <button onclick="inputNumber(0);">0</button>
-          </div>
-          <div>
-            <button onclick="addNumber('-');" class="sign">-</button>
-            <button onclick="inputNumber(8);">8</button>
-            <button onclick="inputNumber(5);">5</button>
-            <button onclick="inputNumber(1);">1</button>
-          </div>
-          <div>
-            <button
-              onclick="addNumber('*');"
-              class="sign"
-              style="padding-top: 20px"
-            >
-              *
-            </button>
-            <button onclick="inputNumber(9);">9</button>
-            <button onclick="inputNumber(6);">6</button>
-            <button onclick="inputNumber(2);">2</button>
-          </div>
-          <div>
-            <button onclick="addNumber('/');" class="sign">/</button>
-            <button onclick="backspace();" class="sign" style="font-size: 20px">
-              Back
-            </button>
-            <button onclick="equal();" class="sign">=</button>
-            <button onclick="inputNumber(3);">3</button>
-          </div>
+        <div id="darkModeSection">
+        <button id="darkMode" onclick="darkMode();">Dark Mode</button>
         </div>
-      </div>
-    </div>
-  </body>
+    </body>
 </html>

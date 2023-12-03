@@ -4,53 +4,55 @@
   --background-color: #f9fbfa;
 }
 
-body {
-  background-color: var(--background-color);
-  margin: 0px;
-  padding: 0px;
-  display: flex;
-  justify-content: center;
-}
-
-#calculator {
-  margin: 100px;
-  border-radius: 50px;
-  background: linear-gradient(145deg, #e0e2e1, #ffffff);
-  box-shadow: 20px 20px 60px #d4d5d5, -20px -20px 60px #ffffff;
-  height: 530px;
-  width: 400px;
-  justify-content: center;
-}
-
 .sign {
-  color: var(--secondary-color);
-}
-
-button {
   vertical-align: middle;
   width: 70px;
   height: 70px;
   font-size: 40px;
-
   border-radius: 100%;
   color: var(--primary-color);
   border: none;
   background: var(--background-color);
   border-radius: 50%;
-  background: linear-gradient(145deg, #cacaca, #f0f0f0);
-  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  margin-top: 20px;
+  color: var(--secondary-color);
+}
+
+body {
+  background-color: var(--background-color);
+  margin: 0px;
+  padding: 0px;
+  display: grid;
+  justify-content: center;
+}
+
+#calculator {
+  margin: 100px 100px 0px 100px;
+  border-radius: 50px;
+  height: 530px;
+  width: 400px;
+  display: flex;
+}
+
+.calculatorButton {
+  vertical-align: middle;
+  width: 70px;
+  height: 70px;
+  font-size: 40px;
+  border-radius: 100%;
+  color: var(--primary-color);
+  border: none;
+  background: var(--background-color);
+  border-radius: 50%;
   margin-top: 20px;
 }
 
-button:active {
-  background: #e0e0e0;
-  box-shadow: inset 20px 20px 60px #bebebe, inset -20px -20px 60px #ffffff;
+.calculatorButton:active {
+  background: var(--background-color);
 }
 
 #screen {
   border-radius: 66px;
-  background: linear-gradient(145deg, #cacaca, #f0f0f0);
-  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
   width: 350px;
   height: 70px;
   margin-top: 40px;
@@ -70,10 +72,60 @@ button:active {
   font-size: 30px;
   overflow: hidden;
   width: 20ch;
+
 }
 
 #numpad {
   display: flex;
   text-align: center;
   padding: 20px;
+}
+#darkModeSection {
+  display: flex;
+  justify-content: center;
+}
+
+#darkMode {
+  color: var(--primary-color);
+  padding: 10px;
+  border-radius: 30px;
+  margin: 20px;
+  display: flex;
+  width: 300px;
+  justify-content: center;
+  background-color: transparent;
+  font-size: medium;
+  transition-duration: 0.3s;
+}
+
+#darkMode:hover {
+  color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  transition-duration: 0.3s;
+}
+
+#darkMode:active {
+  color: var(--background-color);
+  background-color: var(--secondary-color);
+  transition-duration: 0.3s;
+}
+
+.light-mode {
+  background: linear-gradient(145deg, #cacaca, #f0f0f0);
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
+
+.calculator-light-mode {
+  background: linear-gradient(145deg, #e0e2e1, #ffffff);
+  box-shadow: 20px 20px 60px #d4d5d5, -20px -20px 60px #ffffff;
+}
+
+.calculator-dark-mode {
+  background: linear-gradient(145deg, #202020, #272727);
+  box-shadow: 20px 20px 43px #161616, -20px -20px 43px #323232;
+}
+
+.dark-mode {
+  background: linear-gradient(145deg, #202020, #272727);
+  box-shadow: 7px 7px 14px #161616, -7px -7px 14px #323232;
 }
