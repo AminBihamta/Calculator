@@ -72,7 +72,6 @@ body {
   font-size: 30px;
   overflow: hidden;
   width: 20ch;
-
 }
 
 #numpad {
@@ -86,6 +85,14 @@ body {
 }
 
 #darkMode {
+  background-image: linear-gradient(
+    to top,
+    var(--secondary-color) 50%,
+    transparent 50%
+  );
+  background-size: 100% 200%;
+  background-position: top;
+  transition: background-position 0.5s ease-in-out; /** I've changed the time for demo purposes **/
   color: var(--primary-color);
   padding: 10px;
   border-radius: 30px;
@@ -95,13 +102,14 @@ body {
   justify-content: center;
   background-color: transparent;
   font-size: medium;
-  transition-duration: 0.3s;
 }
 
 #darkMode:hover {
-  color: var(--secondary-color);
+  color: var(--background-color);
   border-color: var(--secondary-color);
   transition-duration: 0.3s;
+  background-position: bottom;
+  cursor: pointer;
 }
 
 #darkMode:active {
